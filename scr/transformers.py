@@ -12,7 +12,6 @@ def deal_with_missing_values(df):
     # we should probably make sure here that the dataframe
     # is ordered by time?
     df = df.fillna(method='ffill')
-    df = df.fillna(methdo='median')
     return df
 
 def select_city(df,city=None):
